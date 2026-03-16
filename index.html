@@ -1,234 +1,314 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <style>
-        body { 
-            font-family: 'Noto Sans KR', sans-serif; 
-            letter-spacing: -0.03em; 
-            word-break: keep-all;
-            -webkit-tap-highlight-color: transparent;
-        }
-        .safe-bottom { padding-bottom: calc(env(safe-area-inset-bottom) + 100px); }
-        .sticky-cta { padding-bottom: env(safe-area-inset-bottom); }
-    </style>
-    <title>서수연 프로 숏게임 특강</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>조이현 스승 파3 실전 레슨</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<style>
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+body{
+font-family:'Pretendard',sans-serif;
+background:#F8FAFC;
+color:#0F172A;
+}
+
+.gold{ color:#C6A15B; }
+
+.gold-bg{ background:#C6A15B; }
+
+.gold-border{ border:2px solid #C6A15B; }
+
+.section{ padding:64px 24px; }
+
+.hero-shadow{
+box-shadow:0 25px 60px rgba(0,0,0,0.12);
+}
+
+</style>
 </head>
-<body class="bg-white text-gray-900 overflow-x-hidden selection:bg-pink-100">
 
-    <div class="max-w-[480px] mx-auto min-h-screen relative shadow-2xl bg-white">
-        
-        <!-- Section 1: Hero -->
-        <section class="flex flex-col items-center text-center pt-14 pb-16 px-6 bg-[#fffbfc] relative">
-            <div class="inline-block border border-pink-200 px-3 py-1 rounded-full bg-white text-[10px] font-bold text-pink-400 mb-8 tracking-widest">
-                🌸 2026 SPRING SEASON
-            </div>
-            <h1 class="text-[32px] leading-[1.3] font-black text-gray-800 mb-6">
-                봄바람과 함께<br>
-                당신의 스코어도<br>
-                <span class="text-[#e91e63]">활짝 꽃피우세요! 🌺</span>
-            </h1>
-            <div class="h-0.5 w-10 bg-pink-100 mb-8"></div>
-            <p class="text-[18px] font-bold text-[#e91e63] mb-10 leading-relaxed">
-                3월 한정 '서수연 스승'의<br>
-                벚꽃 시즌 숏게임 특강
-            </p>
-            <p class="text-[14.5px] leading-relaxed text-gray-400 font-normal px-4">
-                겨울잠 자던 실력을 깨울 골든 타임.<br>
-                연습장 매트가 아닌 진짜 잔디 위에서<br>
-                당신의 '라베'를 설계해 드립니다.
-            </p>
-        </section>
+<body>
 
-        <!-- Section 2: Why (Full Content) -->
-        <section class="bg-[#111827] py-20 px-6">
-            <h2 class="text-white text-lg font-black italic mb-10 border-l-4 border-[#e91e63] pl-4 uppercase tracking-tighter">왜 '스승님' 레슨인가?</h2>
-            
-            <div class="bg-[#1f2937] rounded-3xl p-8 mb-10 relative">
-                <div class="text-[#e91e63] mb-6">
-                    <svg class="w-10 h-10 opacity-40" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017V14H15.017C13.9124 14 13.017 13.1046 13.017 12V6C13.017 4.89543 13.9124 4 15.017 4H21.017C22.1216 4 23.017 4.89543 23.017 6V12C23.017 15.3137 20.3307 18 17.017 18V21H14.017ZM1.017 21L1.017 18C1.017 16.8954 1.91243 16 3.017 16H6.017V14H2.017C0.91243 14 0.017 13.1046 0.017 12V6C0.017 4.89543 0.91243 4 2.017 4H8.017C9.12157 4 10.017 4.89543 10.017 6V12C10.017 15.3137 7.33071 18 4.017 18V21H1.017Z"/></svg>
-                </div>
-                <p class="text-white text-[22px] font-bold mb-5 leading-tight">골프는 폼이 아니라 스코어입니다.</p>
-                <p class="text-gray-400 text-[15px] leading-relaxed font-light">
-                    수많은 레슨을 받아도 필드만 가면 무너지는 이유, 테크닉이 아니라 '상황 대응력'의 부재입니다. 서수연 프로는 단순한 스윙 교정을 넘어, 필드에서 스스로 살아남는 법을 가르칩니다.
-                </p>
-            </div>
+<div class="max-w-md mx-auto bg-white shadow-2xl min-h-screen pb-20">
 
-            <div class="grid grid-cols-3 gap-3">
-                <div class="bg-[#1f2937] py-6 rounded-2xl text-center border border-gray-800">
-                    <p class="text-[#f472b6] text-xl font-black">1,000명+</p>
-                    <p class="text-[10px] text-gray-500 mt-1 uppercase">누적 수강생</p>
-                </div>
-                <div class="bg-[#1f2937] py-6 rounded-2xl text-center border border-gray-800">
-                    <p class="text-[#f472b6] text-xl font-black">8.5타</p>
-                    <p class="text-[10px] text-gray-500 mt-1 uppercase">평균 타수 감소</p>
-                </div>
-                <div class="bg-[#1f2937] py-6 rounded-2xl text-center border border-gray-800">
-                    <p class="text-[#f472b6] text-xl font-black">98%</p>
-                    <p class="text-[10px] text-gray-500 mt-1 uppercase">만족도</p>
-                </div>
-            </div>
-        </section>
+<!-- NAV -->
 
-        <!-- Section 3: Pain Points (All 5 Items) -->
-        <section class="py-20 px-6">
-            <h2 class="text-[22px] font-black leading-tight mb-10">
-                혹시 이런 고민으로<br>스트레스 받으시나요?
-            </h2>
-            <div class="space-y-4 mb-12">
-                <div class="flex items-center gap-4 bg-white p-5 rounded-2xl border border-pink-50 shadow-sm">
-                    <div class="min-w-[22px] h-[22px] rounded-full bg-pink-50 flex items-center justify-center text-[#e91e63] text-[11px] font-black border border-pink-100">✓</div>
-                    <p class="text-[15px] font-medium text-gray-700">스크린에선 70타인데 필드는 백돌이인 분</p>
-                </div>
-                <div class="flex items-center gap-4 bg-white p-5 rounded-2xl border border-pink-50 shadow-sm">
-                    <div class="min-w-[22px] h-[22px] rounded-full bg-pink-50 flex items-center justify-center text-[#e91e63] text-[11px] font-black border border-pink-100">✓</div>
-                    <p class="text-[15px] font-medium text-gray-700">어프로치만 잡으면 실수 할까 두려운 분</p>
-                </div>
-                <div class="flex items-center gap-4 bg-white p-5 rounded-2xl border border-pink-50 shadow-sm">
-                    <div class="min-w-[22px] h-[22px] rounded-full bg-pink-50 flex items-center justify-center text-[#e91e63] text-[11px] font-black border border-pink-100">✓</div>
-                    <p class="text-[15px] font-medium text-gray-700">50m 안쪽 거리감이 도무지 안 잡히는 분</p>
-                </div>
-                <div class="flex items-center gap-4 bg-white p-5 rounded-2xl border border-pink-50 shadow-sm">
-                    <div class="min-w-[22px] h-[22px] rounded-full bg-pink-50 flex items-center justify-center text-[#e91e63] text-[11px] font-black border border-pink-100">✓</div>
-                    <p class="text-[15px] font-medium text-gray-700">올해는 꼭 '깨백' 혹은 '싱글'이 목표인 분</p>
-                </div>
-                <div class="flex items-center gap-4 bg-white p-5 rounded-2xl border border-pink-50 shadow-sm">
-                    <div class="min-w-[22px] h-[22px] rounded-full bg-pink-50 flex items-center justify-center text-[#e91e63] text-[11px] font-black border border-pink-100">✓</div>
-                    <p class="text-[15px] font-medium text-gray-700">라운딩에서 동반자들을 놀라게 하고픈 분</p>
-                </div>
-            </div>
+<nav class="sticky top-0 bg-white/90 backdrop-blur border-b px-6 py-4 flex justify-between items-center z-50">
 
-            <div class="bg-[#111827] rounded-2xl p-6 text-center shadow-xl">
-                <p class="text-white text-[14px] font-medium tracking-tight">
-                    ⛳ 더 이상 고민하지 마세요.<br>그 해답은 <span class="text-pink-400 font-bold underline underline-offset-4">'숏게임'</span>에 있습니다
-                </p>
-            </div>
-        </section>
+<span class="font-black text-lg tracking-tight">
+SSNIM
+</span>
 
-        <!-- Section 4: Benefits -->
-        <section class="bg-[#fff8f9] py-20 px-6">
-            <h2 class="text-[22px] font-black mb-1">3월 30만원 상당 혜택 🎁</h2>
-            <p class="text-gray-400 text-sm mb-10 font-light tracking-tight text-center sm:text-left">시즌 오픈 기념, 스승님이 통 크게 쏩니다!</p>
+<span class="text-xs font-semibold text-slate-500">
+스승님 APP EVENT
+</span>
 
-            <div class="space-y-4">
-                <div class="bg-white p-6 rounded-2xl flex justify-between items-center shadow-sm border border-pink-50">
-                    <div>
-                        <h3 class="text-[16px] font-bold text-gray-800">레슨비 25% 할인</h3>
-                        <p class="text-[11px] text-gray-400 mt-1">비시즌 대비 파격가 적용</p>
-                    </div>
-                    <p class="text-[#e91e63] text-[12px] font-black border-b border-pink-200 pb-0.5 italic">약 15만원 가치</p>
-                </div>
-                <div class="bg-white p-6 rounded-2xl flex justify-between items-center shadow-sm border border-pink-50">
-                    <div>
-                        <h3 class="text-[16px] font-bold text-gray-800">2인 동반 입장료</h3>
-                        <p class="text-[11px] text-gray-400 mt-1">동반 신청 시 입장료 전액 지원</p>
-                    </div>
-                    <p class="text-[#e91e63] text-[12px] font-black border-b border-pink-200 pb-0.5 italic">최대 5만원 가치</p>
-                </div>
-                <div class="bg-white p-6 rounded-2xl flex justify-between items-center shadow-sm border border-pink-50">
-                    <div>
-                        <h3 class="text-[16px] font-bold text-gray-800">프라이빗 케어</h3>
-                        <p class="text-[11px] text-gray-400 mt-1">타임당 2인 밀착 피드백</p>
-                    </div>
-                    <p class="text-[#e91e63] text-[12px] font-black border-b border-pink-200 pb-0.5 italic">약 10만원 가치</p>
-                </div>
-            </div>
-        </section>
+</nav>
 
-        <!-- Section 5: Curriculum (Detailed) -->
-        <section class="py-20 px-6">
-            <h2 class="text-[22px] font-black mb-16">압도적인 커리큘럼</h2>
-            
-            <div class="space-y-16">
-                <div class="relative pl-2">
-                    <span class="absolute -top-10 -left-2 text-[64px] font-black text-gray-50 -z-10 leading-none">01</span>
-                    <h3 class="text-[18px] font-bold mb-3 flex items-center gap-2">
-                        <span class="w-1.5 h-1.5 bg-pink-500 rounded-full"></span>
-                        실내: 컨택 및 거리감 진단
-                    </h3>
-                    <p class="text-[14px] leading-relaxed text-gray-400 font-light">어드레스부터 임팩트까지. 기본에 충실한 레슨으로 실수가 나오지 않도록!</p>
-                </div>
-                <div class="relative pl-2 border-t border-gray-50 pt-10">
-                    <span class="absolute -top-10 -left-2 text-[64px] font-black text-gray-50 -z-10 leading-none">02</span>
-                    <h3 class="text-[18px] font-bold mb-3 flex items-center gap-2">
-                        <span class="w-1.5 h-1.5 bg-pink-500 rounded-full"></span>
-                        실외: 라이별 실전 감각 상승
-                    </h3>
-                    <p class="text-[14px] leading-relaxed text-gray-400 font-light">러프, 경사지, 벙커 등 필드 환경 완벽 재현. 상황별 클럽 선택과 거리감 마스터!</p>
-                </div>
-                <div class="relative pl-2 border-t border-gray-50 pt-10">
-                    <span class="absolute -top-10 -left-2 text-[64px] font-black text-gray-50 -z-10 leading-none">03</span>
-                    <h3 class="text-[18px] font-bold mb-3 flex items-center gap-2">
-                        <span class="w-1.5 h-1.5 bg-pink-500 rounded-full"></span>
-                        그린: 퍼팅 집중 훈련
-                    </h3>
-                    <p class="text-[14px] leading-relaxed text-gray-400 font-light">3,4퍼팅을 막는 거리감과 3m 이내 숏퍼팅을 놓치지 않는 퍼터 노하우</p>
-                </div>
-            </div>
-        </section>
 
-        <!-- Section 6: FAQ (Full Content Added) -->
-        <section class="py-16 px-6 bg-[#fafafa]">
-            <h2 class="text-[18px] font-bold flex items-center gap-2 mb-10">
-                <span class="text-xl">❓</span> 자주 묻는 질문 🧐
-            </h2>
-            
-            <div class="space-y-5">
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-                    <p class="font-bold text-[15px] mb-3 text-gray-800">Q. 백돌이도 참여 가능한가요?</p>
-                    <p class="text-[13.5px] leading-relaxed text-gray-500 font-light">A. 당연합니다! 오히려 구력이 짧을 때 제대로 된 숏게임 습관을 들이는 것이 스코어 단축의 지름길입니다.</p>
-                </div>
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-                    <p class="font-bold text-[15px] mb-3 text-gray-800">Q. 준비물은 무엇인가요?</p>
-                    <p class="text-[13.5px] leading-relaxed text-gray-500 font-light">A. 사용하시는 웨지, 퍼터를 챙겨오시면 됩니다. 편안한 골프 복장은 필수!</p>
-                </div>
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-                    <p class="font-bold text-[15px] mb-3 text-gray-800">Q. 비가 오면 어떻게 되나요?</p>
-                    <p class="text-[13.5px] leading-relaxed text-gray-500 font-light">A. 우천 시 일정을 조율하거나 실내 집중 레슨으로 대체 진행되니 걱정 마세요.</p>
-                </div>
-            </div>
-        </section>
 
-        <!-- Section 7: Schedule -->
-        <section class="py-20 px-6 safe-bottom">
-            <h2 class="text-[22px] font-black mb-10 text-center">3월 잔여석 긴급 모집</h2>
-            
-            <div class="space-y-4">
-                <div class="border-2 border-[#e91e63] rounded-[28px] p-7 bg-white relative">
-                    <div class="absolute -top-3 right-6 bg-[#e91e63] text-white text-[10px] px-3 py-1 rounded-full font-black">선착순 2인 마감!</div>
-                    <div class="flex items-center gap-3 mb-3">
-                        <span class="text-2xl">📅</span>
-                        <p class="text-[20px] font-black text-gray-800 tracking-tighter">3/18(화) 10:00</p>
-                    </div>
-                    <p class="text-[#e91e63] text-[12px] pl-10 font-medium">🕒 3월 포토 후기 이벤트 마감</p>
-                </div>
+<!-- HERO -->
 
-                <div class="bg-white border border-gray-200 rounded-[28px] p-7 relative">
-                    <div class="absolute -top-3 right-6 bg-gray-200 text-gray-500 text-[10px] px-3 py-1 rounded-full font-black tracking-tight">모집중 (2석)</div>
-                    <div class="flex items-center gap-3 mb-3">
-                        <span class="text-2xl grayscale opacity-50">📅</span>
-                        <p class="text-[20px] font-black text-gray-700 tracking-tighter">3/30(월) 10:00</p>
-                    </div>
-                    <p class="text-gray-400 text-[12px] pl-10 font-medium">🕒 여유로운 오전 타임, 3월 마지막 레슨</p>
-                </div>
-            </div>
-            
-            <p class="text-center text-[11px] text-gray-400 mt-10 font-medium">※ 개별 일정 조율 및 조인 문의 환영합니다.</p>
-        </section>
+<header class="section text-center pt-10 pb-4">
 
-        <!-- Sticky Bottom CTA -->
-        <div class="fixed bottom-0 left-0 right-0 z-50 p-4 max-w-[480px] mx-auto sticky-cta">
-            <div class="bg-white/80 backdrop-blur-md rounded-3xl p-1 shadow-2xl">
-                <a href="#" class="flex items-center justify-center gap-3 bg-[#111827] text-white w-full py-5 rounded-[22px] text-[18px] font-black active:scale-[0.97] transition-all shadow-lg">
-                    <span>💬</span> 숏게임 레슨 문의 👇 <span class="text-xl">→</span>
-                </a>
-            </div>
-        </div>
+<span class="text-[11px] font-bold tracking-widest text-slate-400">
+3월 한정 실전 레슨
+</span>
 
-    </div>
+<h1 class="text-3xl font-extrabold leading-tight mt-4">
+
+조이현 스승<br>
+<span class="gold">파3 실전 레슨</span>
+
+</h1>
+
+<p class="text-gray-500 text-sm mt-4 leading-relaxed">
+
+필드에서 스코어가 안 나오는 이유<br>
+대부분은 <b>100M 이내 숏게임</b>입니다
+
+</p>
+
+<div class="mt-8 px-4">
+
+<img src="https://api.deepai.org/job-view-file/60c88597-96a9-4674-8849-055139268f6e/outputs/output.jpg"
+onerror="this.src='https://images.unsplash.com/photo-1535131749006-b7f58c99034b?q=80&w=2070&auto=format&fit=crop'"
+class="rounded-2xl hero-shadow">
+
+</div>
+
+</header>
+
+
+
+<!-- TARGET USERS -->
+
+<section class="section pt-10">
+
+<h2 class="text-xl font-bold mb-6 flex items-center gap-2">
+
+<span class="w-1.5 h-6 bg-slate-900 rounded-full"></span>
+이런 골퍼에게 추천합니다
+
+</h2>
+
+<div class="space-y-3">
+
+<div class="bg-gray-50 border rounded-xl p-4 flex gap-3 items-center">
+<span class="font-bold text-slate-400">01</span>
+<p class="text-sm font-medium">100M 이내 어프로치 정확도를 높이고 싶은 분</p>
+</div>
+
+<div class="bg-gray-50 border rounded-xl p-4 flex gap-3 items-center">
+<span class="font-bold text-slate-400">02</span>
+<p class="text-sm font-medium">그린 주변에서 뒷땅 실수가 많은 분</p>
+</div>
+
+<div class="bg-gray-50 border rounded-xl p-4 flex gap-3 items-center">
+<span class="font-bold text-slate-400">03</span>
+<p class="text-sm font-medium">벙커샷이 항상 부담스러운 분</p>
+</div>
+
+<div class="bg-gray-50 border rounded-xl p-4 flex gap-3 items-center">
+<span class="font-bold text-slate-400">04</span>
+<p class="text-sm font-medium">3퍼팅 때문에 스코어가 안 줄어드는 분</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- PHILOSOPHY -->
+
+<section class="bg-slate-900 text-white section">
+
+<h3 class="gold text-xs tracking-[0.2em] font-bold mb-3">
+LESSON PHILOSOPHY
+</h3>
+
+<h2 class="text-2xl font-bold leading-snug mb-5">
+골프는 결국<br>
+어프로치에서 결정됩니다
+</h2>
+
+<p class="text-gray-400 text-sm leading-relaxed mb-8">
+
+단순한 스윙 교정이 아닌<br>
+100M 이내 거리 컨트롤 · 벙커 · 퍼팅 등<br>
+실전 상황에서 실수하지 않는 방법을<br>
+집중적으로 알려드립니다.
+
+</p>
+
+<div class="grid grid-cols-2 gap-4">
+
+<div class="bg-slate-800 rounded-xl p-4 text-center">
+<i class="fa-solid fa-flag-checkered gold text-xl mb-2"></i>
+<p class="text-sm font-semibold">실전 감각 강화</p>
+</div>
+
+<div class="bg-slate-800 rounded-xl p-4 text-center">
+<i class="fa-solid fa-bullseye gold text-xl mb-2"></i>
+<p class="text-sm font-semibold">소수 정예 코칭</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- BENEFITS -->
+
+<section class="section">
+
+<h2 class="text-xl font-bold mb-6">
+스승님 앱 회원 전용 혜택
+</h2>
+
+<div class="space-y-4">
+
+<!-- PRICE -->
+
+<div class="gold-border rounded-2xl p-6 shadow-sm">
+
+<p class="text-xs text-slate-400 mb-1">
+스승님 앱 특별 프로모션
+</p>
+
+<div class="flex justify-between items-end">
+
+<h4 class="font-bold text-lg">
+파3 실전 레슨
+</h4>
+
+<div class="text-right">
+<span class="text-gray-400 line-through text-sm">200,000원</span>
+<p class="text-2xl font-black gold">180,000원</p>
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- BENEFITS GRID -->
+
+<div class="grid grid-cols-2 gap-3">
+
+<div class="bg-gray-50 rounded-xl p-4 text-center">
+
+<p class="text-[10px] text-gray-400 uppercase font-bold mb-1">
+Benefit
+</p>
+
+<p class="text-xs font-semibold leading-tight">
+2인 동반 신청 시<br>
+입장료 1만원 지원
+</p>
+
+</div>
+
+
+<div class="bg-gray-50 rounded-xl p-4 text-center">
+
+<p class="text-[10px] text-gray-400 uppercase font-bold mb-1">
+Benefit
+</p>
+
+<p class="text-xs font-semibold leading-tight">
+포토 후기 작성 시<br>
+메가커피 쿠폰 지급
+</p>
+
+</div>
+
+
+<div class="bg-gray-50 rounded-xl p-4 text-center col-span-2">
+
+<p class="text-[10px] text-gray-400 uppercase font-bold mb-1">
+APP REWARD
+</p>
+
+<p class="text-xs font-semibold">
+스승님 앱 포인트 +5,000P 지급
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- LESSON INFO -->
+
+<section class="section pt-0">
+
+<h2 class="text-xl font-bold mb-6">
+레슨 상세 안내
+</h2>
+
+<div class="border rounded-2xl divide-y text-sm overflow-hidden">
+
+<div class="flex px-5 py-4">
+<span class="w-28 text-gray-400">레슨 구성</span>
+<span class="font-semibold">20~90M 어프로치 · 벙커 · 퍼팅</span>
+</div>
+
+<div class="flex px-5 py-4">
+<span class="w-28 text-gray-400">소요 시간</span>
+<span class="font-semibold gold">약 150분</span>
+</div>
+
+<div class="flex px-5 py-4">
+<span class="w-28 text-gray-400">진행 인원</span>
+<span class="font-semibold">최대 2명</span>
+</div>
+
+<div class="flex px-5 py-4">
+<span class="w-28 text-gray-400">레슨 장소</span>
+<span class="font-semibold">수도권 파3 (채팅 협의)</span>
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- BOTTOM INFO -->
+
+<section class="bg-slate-900 text-white text-center py-10">
+
+<p class="text-lg font-semibold mb-3">
+스승님 앱 회원 전용 레슨
+</p>
+
+<p class="text-gray-400 text-sm leading-relaxed">
+스승님 앱을 통해 신청 시<br>
+이벤트 혜택이 제공됩니다
+</p>
+
+<p class="mt-6 text-xl font-bold gold">
+👇 채팅 문의 환영 👇
+</p>
+
+</section>
+
+
+</div>
 
 </body>
 </html>
