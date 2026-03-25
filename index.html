@@ -37,10 +37,11 @@
                     '라베' 도전해보세요 ♥️
                 </p>
                 
-                <div class="bg-white/10 border border-white/20 rounded-2xl p-6 backdrop-blur-sm">
-                    <div class="text-xs text-slate-400 mb-1">스승님 4월 특별 혜택가</div>
+                <div class="bg-white/10 border border-white/20 rounded-2xl p-6 backdrop-blur-sm relative">
+                    <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-pink-600 text-white text-[10px] px-3 py-1 rounded-full font-black">실력 보장제 실시</div>
+                    <div class="text-xs text-slate-400 mb-1 mt-2">스승님 4월 특별 혜택가</div>
                     <div class="text-3xl font-black">220,000<span class="text-lg">원</span></div>
-                    <div class="text-xs text-pink-500 mt-1 font-bold">기존가 25만원 대비 12% 할인</div>
+                    <div class="text-xs text-pink-500 mt-1 font-bold italic">불만족 시 100% 환불 약속</div>
                 </div>
             </div>
         </section>
@@ -55,15 +56,15 @@
             <div class="space-y-4">
                 <div class="flex items-center gap-4 bg-slate-50 p-5 rounded-2xl border border-slate-100">
                     <span class="text-2xl">📍</span>
-                    <span class="font-bold text-slate-700">연습장, 스크린에선 싱글, 필드만 가면 '90~100타'</span>
+                    <span class="font-bold text-slate-700 leading-tight text-sm">연습장, 스크린에선 싱글, 필드만 가면 '90~100타'</span>
                 </div>
                 <div class="flex items-center gap-4 bg-slate-50 p-5 rounded-2xl border border-slate-100">
                     <span class="text-2xl">📍</span>
-                    <span class="font-bold text-slate-700">벙커만 들어가면 기본 2~3타 추가</span>
+                    <span class="font-bold text-slate-700 text-sm">벙커만 들어가면 기본 2~3타 추가</span>
                 </div>
                 <div class="flex items-center gap-4 bg-slate-50 p-5 rounded-2xl border border-slate-100">
                     <span class="text-2xl">📍</span>
-                    <span class="font-bold text-slate-700">어프로치,퍼터 거리 조절 실패 무한루프</span>
+                    <span class="font-bold text-slate-700 text-sm">어프로치,퍼터 거리 조절 실패 무한루프</span>
                 </div>
             </div>
         </section>
@@ -71,8 +72,7 @@
         <!-- SECTION 3: PRO PROFILE -->
         <section class="bg-slate-900 text-white px-8 py-16 text-center">
             <div class="w-32 h-32 mx-auto rounded-full bg-slate-800 border-4 border-pink-500 mb-6 overflow-hidden">
-    <img src="images/seosuyeon.jpg" class="w-full h-full object-cover">
-</div>
+                <img src="images/seosuyeon.jpg" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150'">
             </div>
             <h3 class="text-pink-500 font-bold tracking-widest text-xs mb-2">FIELD MASTER</h3>
             <h2 class="text-2xl font-black mb-6 italic">"골프는 예쁜 스윙이 아니라,<br>홀컵에 넣는 게임입니다."</h2>
@@ -87,13 +87,13 @@
                     <div class="text-[10px] text-slate-400">평균 타수 감소</div>
                 </div>
                 <div class="bg-slate-800 p-4 rounded-xl">
-                    <div class="text-pink-500 font-black text-xl">98%</div>
+                    <div class="text-pink-500 font-black text-xl">100%</div>
                     <div class="text-[10px] text-slate-400">만족도</div>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION 4: BENEFITS -->
+        <!-- SECTION 4: BENEFITS & REFUND POLICY -->
         <section class="section-padding bg-pink-50">
             <div class="bg-white rounded-3xl p-8 shadow-xl border border-pink-100 relative">
                 <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-pink-500 text-white px-6 py-1 rounded-full font-black text-sm italic shadow-lg">
@@ -105,19 +105,29 @@
                     <div class="text-4xl font-black text-slate-900">220,000원</div>
                 </div>
 
-                <div class="space-y-4 border-t border-slate-100 pt-6">
+                <div class="space-y-5 border-t border-slate-100 pt-6">
                     <div class="flex items-start gap-4">
-                        <div class="w-8 h-8 bg-pink-100 text-pink-600 rounded-lg flex items-center justify-center font-bold">1</div>
+                        <div class="w-8 h-8 bg-pink-100 text-pink-600 rounded-lg flex items-center justify-center font-bold shrink-0">1</div>
                         <div>
                             <div class="font-bold text-slate-800">2인 동반 입금 혜택</div>
                             <div class="text-xs text-slate-500 leading-tight mt-1">연습장 입장료 전액 지원 (인당 최대 2만원)</div>
                         </div>
                     </div>
                     <div class="flex items-start gap-4">
-                        <div class="w-8 h-8 bg-pink-100 text-pink-600 rounded-lg flex items-center justify-center font-bold">2</div>
+                        <div class="w-8 h-8 bg-pink-100 text-pink-600 rounded-lg flex items-center justify-center font-bold shrink-0">2</div>
                         <div>
                             <div class="font-bold text-slate-800">개인별 약점 보완지 제공</div>
                             <div class="text-xs text-slate-500 leading-tight mt-1">레슨 후 보완해야 할 점 리포트 발송</div>
+                        </div>
+                    </div>
+                    
+                    <!-- [스승님 정책] Refund Policy Highlight -->
+                    <div class="flex items-start gap-4 p-4 bg-slate-900 rounded-2xl text-white">
+                        <div class="w-8 h-8 bg-pink-500 text-white rounded-lg flex items-center justify-center font-bold shrink-0">!</div>
+                        <div>
+                            <div class="font-bold text-pink-400 uppercase tracking-tighter text-xs">스승님 특별 선언</div>
+                            <div class="text-[14px] font-black leading-snug mt-1">레슨 불만족 시 100% 환불 보장</div>
+                            <div class="text-[10px] text-slate-400 mt-1 leading-tight italic">"실력 향상에 대한 자신감, 결과로 증명합니다."</div>
                         </div>
                     </div>
                 </div>
@@ -150,16 +160,6 @@
                         <p class="text-sm text-slate-500 leading-relaxed">다양한 라이 상황에 따른 클럽 활용과 30m 이내 거리감 마스터</p>
                     </div>
                 </div>
-            <!-- Refund Policy Added -->
-                    <div class="flex items-start gap-4 p-4 bg-slate-900 rounded-2xl text-white">
-                        <div class="w-8 h-8 bg-pink-500 text-white rounded-lg flex items-center justify-center font-bold shrink-0">!</div>
-                        <div>
-                            <div class="font-bold text-pink-400 uppercase tracking-tighter">스승님 특별 선언</div>
-                            <div class="text-[13px] font-black leading-snug mt-1">레슨 불만족 시 100% 환불 보장</div>
-                            <div class="text-[10px] text-slate-400 mt-1 leading-tight italic">"실력 향상에 대한 자신감, 결과로 증명합니다."</div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
 
@@ -173,14 +173,14 @@
                         <div class="text-xs font-bold text-pink-500 mb-1">마감임박 🔴</div>
                         <div class="text-lg font-black italic">4/11(토) 10:00</div>
                     </div>
-                    <div class="text-sm font-bold text-slate-400">잔여 1석</div>
+                    <div class="text-sm font-bold text-slate-400">선착순 마감</div>
                 </div>
                 <div class="bg-white p-5 rounded-2xl border border-slate-200 flex justify-between items-center opacity-80">
                     <div>
                         <div class="text-xs font-bold text-slate-400 mb-1">모집중 🟡</div>
                         <div class="text-lg font-black italic">4/18(토) 13:00</div>
                     </div>
-                    <div class="text-sm font-bold text-slate-800">잔여 3석</div>
+                    <div class="text-sm font-bold text-slate-800">선착순 마감</div>
                 </div>
             </div>
             
@@ -198,6 +198,10 @@
         <section class="section-padding bg-white text-center">
             <h3 class="text-lg font-black mb-8">자주 묻는 질문 🧐</h3>
             <div class="text-left space-y-6">
+                <div>
+                    <div class="text-sm font-black mb-1 italic"><span class="text-pink-500">Q.</span> 정말 100% 환불되나요?</div>
+                    <p class="text-xs text-slate-500 leading-relaxed bg-slate-50 p-4 rounded-xl font-medium">네, 서수연 프로는 실력 향상을 보장합니다. 레슨 내용에 만족하지 못하실 경우, 이유 불문 100% 환불해 드리는 것이 스승님의 원칙입니다.</p>
+                </div>
                 <div>
                     <div class="text-sm font-black mb-1 italic"><span class="text-pink-500">Q.</span> 초보자도 가능한가요?</div>
                     <p class="text-xs text-slate-500 leading-relaxed bg-slate-50 p-4 rounded-xl">당연합니다! 처음부터 잔디 위에서의 감각을 익혀야 스코어가 줄어드는 모습을 확실히 체감할 수 있습니다.</p>
@@ -222,4 +226,3 @@
 
 </body>
 </html>
-
