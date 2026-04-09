@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>상세소개 | 곽시랑 프로의 파3 목적 달성 레슨</title>
 
     <!-- Frameworks -->
@@ -25,22 +25,30 @@
             background-color: var(--bg-paper);
             color: var(--text-dark);
             line-height: 1.8;
-            letter-spacing: -0.01em;
+            letter-spacing: -0.02em;
             word-break: keep-all;
+            -webkit-text-size-adjust: none;
         }
 
         .font-serif { font-family: 'Noto Serif KR', serif; }
         
-        /* Editorial Layout */
+        /* Editorial Wide Layout */
         .content-container {
-            max-width: 800px;
+            width: 100%;
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 0 24px;
+            padding: 0 20px;
+        }
+
+        @media (min-width: 1024px) {
+            .content-container {
+                padding: 0 60px;
+            }
         }
 
         .section-margin {
-            margin-top: 160px;
-            margin-bottom: 160px;
+            margin-top: 140px;
+            margin-bottom: 140px;
         }
 
         @media (max-width: 768px) {
@@ -52,84 +60,27 @@
 
         /* Divider */
         .editorial-divider {
-            width: 40px;
-            height: 2px;
+            width: 60px;
+            height: 3px;
             background: var(--primary);
-            margin: 40px auto;
+            margin: 50px auto;
         }
 
         /* Image Mask */
         .img-editorial {
-    border-radius: 4px;
-    filter: none;
-    transition: filter 0.5s ease;
-}
-.img-editorial:hover {
-    filter: none;
-}
-        blockquote {
-            font-family: 'Noto Serif KR', serif;
-            font-size: 1.25rem;
-            border-left: 4px solid var(--primary);
-            padding-left: 24px;
-            margin: 48px 0;
-            color: var(--primary);
-            font-weight: 700;
-        }
-    </style>
-</head>
-<body>
-
-    <!-- Header (Simple Navigation) -->
-    <header class="py-8 border-b border-gray-100 bg-white">
-        <div class="content-container flex justify-between items-center">
-            <span class="text-lg font-black font-mont tracking-tighter">SSNIM <span class="text-green-700">PAR3</span></span>
-            <span class="text-xs font-bold text-gray-400 uppercase tracking-widest">Master Course Detail</span>
-        </div>
-    </header>
-
-
-        @media (min-width: 1024px) {
-            .content-container {
-                padding: 0 40px;
-            }
-        }
-
-        .section-margin {
-            margin-top: 120px;
-            margin-bottom: 120px;
-        }
-
-        @media (max-width: 768px) {
-            .section-margin {
-                margin-top: 80px;
-                margin-bottom: 80px;
-            }
-        }
-
-        /* Divider */
-        .editorial-divider {
-            width: 40px;
-            height: 2px;
-            background: var(--primary);
-            margin: 40px auto;
-        }
-
-        /* Image Mask - No Grayscale as per latest request */
-        .img-editorial {
-            border-radius: 8px;
+            border-radius: 12px;
             width: 100%;
             height: auto;
             object-fit: cover;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.1);
         }
 
         blockquote {
             font-family: 'Noto Serif KR', serif;
-            font-size: 1.25rem;
-            border-left: 4px solid var(--primary);
-            padding-left: 20px;
-            margin: 40px 0;
+            font-size: 1.5rem;
+            border-left: 6px solid var(--primary);
+            padding-left: 24px;
+            margin: 50px 0;
             color: var(--primary);
             font-weight: 700;
         }
@@ -142,25 +93,25 @@
 <body class="no-scrollbar">
 
     <!-- Header -->
-    <header class="py-6 border-b border-gray-100 bg-white sticky top-0 z-50">
+    <header class="py-8 border-b border-gray-100 bg-white sticky top-0 z-50">
         <div class="content-container flex justify-between items-center">
-            <span class="text-xl font-black font-mont tracking-tighter">SSNIM <span class="text-green-700">PAR3</span></span>
-            <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Master Class Detail</span>
+            <span class="text-2xl font-black font-mont tracking-tighter">SSNIM <span class="text-green-700">PAR3</span></span>
+            <span class="text-[12px] font-bold text-gray-400 uppercase tracking-widest">Master Class Detail</span>
         </div>
     </header>
 
     <!-- 1️⃣ Hero -->
-    <section class="pt-20 pb-16 bg-white">
+    <section class="pt-24 pb-20 bg-white">
         <div class="content-container text-center">
             <div data-aos="fade-up">
-                <p class="text-green-700 font-bold text-xs mb-4 tracking-[0.2em] uppercase">The Philosophy of Golf</p>
-                <h1 class="font-serif text-3xl md:text-5xl lg:text-6xl text-gray-900 leading-tight mb-8">
+                <p class="text-green-700 font-bold text-sm mb-6 tracking-[0.25em] uppercase">The Philosophy of Golf</p>
+                <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl text-gray-900 leading-tight mb-10">
                     골프의 품격은<br>
                     <span class="italic text-green-800">그린 주변 30m</span>에서<br>
                     결정됩니다
                 </h1>
                 <div class="editorial-divider"></div>
-                <p class="text-base md:text-xl text-gray-500 font-medium max-w-2xl mx-auto leading-relaxed px-4">
+                <p class="text-lg md:text-2xl text-gray-500 font-medium max-w-3xl mx-auto leading-relaxed px-4">
                     화려한 드라이버 샷이 갤러리를 즐겁게 한다면,<br class="hidden md:block">
                     정교한 숏게임은 당신의 스코어와 품격을 지켜줍니다.
                 </p>
@@ -171,16 +122,16 @@
     <!-- 2️⃣ Problem -->
     <section class="section-margin">
         <div class="content-container">
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-16 items-center">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-20 items-center">
                 <div class="md:col-span-7" data-aos="fade-right">
                     <img src="https://rlaeodn1015-oss.github.io/camp/images/202404113119349ljb2727.jpg" alt="Golf Scene" class="img-editorial">
                 </div>
                 <div class="md:col-span-5" data-aos="fade-left">
-                    <h2 class="font-serif text-2xl md:text-3xl mb-6 leading-snug text-gray-900">
+                    <h2 class="font-serif text-3xl md:text-4xl mb-8 leading-snug text-gray-900">
                         연습장의 100개보다<br> 
                         잔디 위 1개가 중요한 이유
                     </h2>
-                    <div class="space-y-4 text-gray-600 text-sm md:text-base">
+                    <div class="space-y-6 text-gray-600 text-base md:text-lg">
                         <p>
                             평평한 매트 위에서 수천 번의 스윙을 반복해도 필드에서 무너지는 이유는 단순합니다. 
                             자연은 결코 평평하지 않기 때문입니다.
@@ -196,34 +147,34 @@
     </section>
 
     <!-- 3️⃣ The Core: Why Par 3? -->
-    <section class="section-margin bg-gray-50 py-20 md:py-32">
+    <section class="section-margin bg-gray-50 py-24 md:py-40">
         <div class="content-container">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h3 class="font-serif text-2xl md:text-4xl mb-4">파3 레슨의 가치</h3>
-                <p class="text-gray-400 text-sm md:text-base">우리가 왜 굳이 파3 코스로 나가는지 설명합니다.</p>
+            <div class="text-center mb-20" data-aos="fade-up">
+                <h3 class="font-serif text-3xl md:text-5xl mb-6">파3 레슨의 가치</h3>
+                <p class="text-gray-400 text-base md:text-xl">우리가 왜 굳이 파3 코스로 나가는지 설명합니다.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
-                <div class="bg-white p-8 md:p-10 rounded-2xl shadow-sm" data-aos="fade-up" data-aos-delay="100">
-                    <span class="text-4xl font-mont font-black text-green-50 block mb-6">01</span>
-                    <h4 class="text-lg font-bold mb-4">무제한에 가까운 반복</h4>
-                    <p class="text-gray-600 text-sm leading-relaxed">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-14">
+                <div class="bg-white p-10 md:p-12 rounded-3xl shadow-sm" data-aos="fade-up" data-aos-delay="100">
+                    <span class="text-5xl font-mont font-black text-green-50 block mb-8">01</span>
+                    <h4 class="text-2xl font-bold mb-6">무제한에 가까운 반복</h4>
+                    <p class="text-gray-600 text-base leading-relaxed">
                         정규 홀에서는 뒷팀의 압박 때문에 실수를 해도 그냥 넘어가야 합니다. 하지만 우리의 레슨은 '성공할 때까지' 다시 시도하며 뇌에 성공의 감각을 각인시킵니다.
                     </p>
                 </div>
 
-                <div class="bg-white p-8 md:p-10 rounded-2xl shadow-sm" data-aos="fade-up" data-aos-delay="200">
-                    <span class="text-4xl font-mont font-black text-green-50 block mb-6">02</span>
-                    <h4 class="text-lg font-bold mb-4">천연 잔디의 정직함</h4>
-                    <p class="text-gray-600 text-sm leading-relaxed">
+                <div class="bg-white p-10 md:p-12 rounded-3xl shadow-sm" data-aos="fade-up" data-aos-delay="200">
+                    <span class="text-5xl font-mont font-black text-green-50 block mb-8">02</span>
+                    <h4 class="text-2xl font-bold mb-6">천연 잔디의 정직함</h4>
+                    <p class="text-gray-600 text-base leading-relaxed">
                         인조 잔디는 클럽을 튕겨내지만, 천연 잔디는 당신의 실수를 가감 없이 드러냅니다. 지면과의 관계를 이해해야 진짜 임팩트가 만들어집니다.
                     </p>
                 </div>
 
-                <div class="bg-white p-8 md:p-10 rounded-2xl shadow-sm" data-aos="fade-up" data-aos-delay="300">
-                    <span class="text-4xl font-mont font-black text-green-50 block mb-6">03</span>
-                    <h4 class="text-lg font-bold mb-4">실전 퍼팅 루틴</h4>
-                    <p class="text-gray-600 text-sm leading-relaxed">
+                <div class="bg-white p-10 md:p-12 rounded-3xl shadow-sm" data-aos="fade-up" data-aos-delay="300">
+                    <span class="text-5xl font-mont font-black text-green-50 block mb-8">03</span>
+                    <h4 class="text-2xl font-bold mb-6">실전 퍼팅 루틴</h4>
+                    <p class="text-gray-600 text-base leading-relaxed">
                         화살표 없는 그린에서 직접 경사를 읽고 거리를 측정하는 '생각하는 골프'를 배웁니다. 이것이 싱글 골퍼로 가는 지름길입니다.
                     </p>
                 </div>
@@ -234,29 +185,29 @@
     <!-- 4️⃣ Master Profile -->
     <section class="section-margin">
         <div class="content-container">
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
                 <div class="md:col-span-6" data-aos="fade-right">
-                    <div class="relative px-4">
-                        <img src="https://rlaeodn1015-oss.github.io/camp/images/KakaoTalk_20260327_165459882.png" alt="곽시랑 프로" class="img-editorial rounded-2xl">
-                        <div class="absolute -bottom-6 -right-2 md:-right-10 bg-green-800 text-white p-6 md:p-10 rounded-2xl shadow-2xl">
-                            <p class="text-2xl md:text-4xl font-black font-mont italic text-amber-400 mb-1">MASTER</p>
-                            <p class="text-[9px] md:text-xs tracking-widest opacity-70">KWAK SI RANG</p>
+                    <div class="relative px-6">
+                        <img src="https://rlaeodn1015-oss.github.io/camp/images/KakaoTalk_20260327_165459882.png" alt="곽시랑 프로" class="img-editorial rounded-3xl">
+                        <div class="absolute -bottom-8 -right-2 md:-right-12 bg-green-800 text-white p-8 md:p-14 rounded-3xl shadow-2xl">
+                            <p class="text-3xl md:text-5xl font-black font-mont italic text-amber-400 mb-2">MASTER</p>
+                            <p class="text-[11px] md:text-sm tracking-[0.3em] opacity-70 uppercase">Kwak Si Rang</p>
                         </div>
                     </div>
                 </div>
-                <div class="md:col-span-6 pt-12 md:pt-0" data-aos="fade-left">
-                    <p class="text-xs font-bold text-green-700 tracking-widest uppercase mb-4">The Master Profile</p>
-                    <h2 class="font-serif text-3xl md:text-4xl mb-6 text-gray-900">곽시랑 프로</h2>
-                    <p class="text-base md:text-xl font-bold text-gray-800 mb-8 italic leading-relaxed">
+                <div class="md:col-span-6 pt-16 md:pt-0" data-aos="fade-left">
+                    <p class="text-sm font-bold text-green-700 tracking-widest uppercase mb-6">The Master Profile</p>
+                    <h2 class="font-serif text-4xl md:text-5xl mb-8 text-gray-900">곽시랑 프로</h2>
+                    <p class="text-xl md:text-2xl font-bold text-gray-800 mb-10 italic leading-relaxed">
                         "결과가 보이지 않는 레슨은<br class="md:hidden"> 가치가 없습니다."
                     </p>
                     
-                    <div class="space-y-6 text-gray-600 text-sm md:text-base leading-relaxed border-t border-gray-100 pt-8">
-                        <p>그녀는 단순한 교습가를 넘어, 골퍼 고유의 리듬을 찾아주는 조력자입니다.</p>
-                        <ul class="space-y-3 font-medium">
-                            <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-green-700 rounded-full"></span> KLPGA 준회원 및 공인 지도자</li>
-                            <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-green-700 rounded-full"></span> 숏게임 교정 누적 1,200건 이상</li>
-                            <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-green-700 rounded-full"></span> 비전힐스CC 파3 전담 마스터</li>
+                    <div class="space-y-8 text-gray-600 text-base md:text-lg leading-relaxed border-t border-gray-100 pt-10">
+                        <p>단순한 교습가를 넘어, 골퍼 고유의 리듬을 찾아주는 조력자입니다.</p>
+                        <ul class="space-y-4 font-medium">
+                            <li class="flex items-center gap-4"><span class="w-2 h-2 bg-green-700 rounded-full"></span> KLPGA 준회원 및 공인 지도자</li>
+                            <li class="flex items-center gap-4"><span class="w-2 h-2 bg-green-700 rounded-full"></span> 숏게임 교정 누적 1,200건 이상</li>
+                            <li class="flex items-center gap-4"><span class="w-2 h-2 bg-green-700 rounded-full"></span> 비전힐스CC 파3 전담 마스터</li>
                         </ul>
                     </div>
                 </div>
@@ -265,37 +216,37 @@
     </section>
 
     <!-- 5️⃣ Program Flow -->
-    <section class="section-margin py-20 md:py-32 border-y border-gray-100 bg-white">
+    <section class="section-margin py-24 md:py-40 border-y border-gray-100 bg-white">
         <div class="content-container">
-            <h3 class="font-serif text-2xl md:text-4xl text-center mb-16 md:mb-24">레슨의 흐름</h3>
+            <h3 class="font-serif text-3xl md:text-5xl text-center mb-20 md:mb-28">레슨의 흐름</h3>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
-                <div class="flex gap-6" data-aos="fade-up">
-                    <span class="text-3xl font-black font-mont text-green-100">01</span>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-16">
+                <div class="flex gap-8" data-aos="fade-up">
+                    <span class="text-4xl font-black font-mont text-green-100">01</span>
                     <div>
-                        <h4 class="text-lg font-bold mb-2">사전 진단 및 목표 설정</h4>
-                        <p class="text-gray-500 text-sm">개인별 실수 패턴을 분석하고 오늘 해결해야 할 단 하나의 고질병을 정의합니다.</p>
+                        <h4 class="text-2xl font-bold mb-3">사전 진단 및 목표 설정</h4>
+                        <p class="text-gray-500 text-base">개인별 실수 패턴을 분석하고 오늘 해결해야 할 단 하나의 고질병을 정의합니다.</p>
                     </div>
                 </div>
-                <div class="flex gap-6" data-aos="fade-up" data-aos-delay="100">
-                    <span class="text-3xl font-black font-mont text-green-100">02</span>
+                <div class="flex gap-8" data-aos="fade-up" data-aos-delay="100">
+                    <span class="text-4xl font-black font-mont text-green-100">02</span>
                     <div>
-                        <h4 class="text-lg font-bold mb-2">상황별 집중 어프로치</h4>
-                        <p class="text-gray-500 text-sm">지형에 따른 탄도 조절과 러프/경사지 탈출 전략을 집중 훈련합니다.</p>
+                        <h4 class="text-2xl font-bold mb-3">상황별 집중 어프로치</h4>
+                        <p class="text-gray-500 text-base">지형에 따른 탄도 조절과 러프/경사지 탈출 전략을 집중 훈련합니다.</p>
                     </div>
                 </div>
-                <div class="flex gap-6" data-aos="fade-up" data-aos-delay="200">
-                    <span class="text-3xl font-black font-mont text-green-100">03</span>
+                <div class="flex gap-8" data-aos="fade-up" data-aos-delay="200">
+                    <span class="text-4xl font-black font-mont text-green-100">03</span>
                     <div>
-                        <h4 class="text-lg font-bold mb-2">실전 퍼팅 & 매니지먼트</h4>
-                        <p class="text-gray-500 text-sm">그린의 흐름을 읽는 법과 실전에서 무너지지 않는 멘탈 관리법을 전수합니다.</p>
+                        <h4 class="text-2xl font-bold mb-3">실전 퍼팅 & 매니지먼트</h4>
+                        <p class="text-gray-500 text-base">그린의 흐름을 읽는 법과 실전에서 무너지지 않는 멘탈 관리법을 전수합니다.</p>
                     </div>
                 </div>
-                <div class="flex gap-6" data-aos="fade-up" data-aos-delay="300">
-                    <span class="text-3xl font-black font-mont text-green-100">04</span>
+                <div class="flex gap-8" data-aos="fade-up" data-aos-delay="300">
+                    <span class="text-4xl font-black font-mont text-green-100">04</span>
                     <div>
-                        <h4 class="text-lg font-bold mb-2">최종 피드백 리포트</h4>
-                        <p class="text-gray-500 text-sm">교정 포인트를 잊지 않도록 개인별 커스텀 드릴 과제를 제공합니다.</p>
+                        <h4 class="text-2xl font-bold mb-3">최종 피드백 리포트</h4>
+                        <p class="text-gray-500 text-base">교정 포인트를 잊지 않도록 개인별 커스텀 드릴 과제를 제공합니다.</p>
                     </div>
                 </div>
             </div>
@@ -305,26 +256,26 @@
     <!-- 6️⃣ Trust & Promise -->
     <section class="section-margin">
         <div class="content-container text-center">
-            <div class="max-w-3xl mx-auto px-4" data-aos="fade-up">
-                <div class="w-16 h-16 bg-green-50 rounded-full flex items-center justify-center mx-auto mb-8">
-                    <i class="fa-solid fa-shield-check text-2xl text-green-700"></i>
+            <div class="max-w-4xl mx-auto px-4" data-aos="fade-up">
+                <div class="w-20 h-20 bg-green-50 rounded-full flex items-center justify-center mx-auto mb-10">
+                    <i class="fa-solid fa-shield-check text-3xl text-green-700"></i>
                 </div>
-                <h3 class="font-serif text-2xl md:text-3xl mb-8 leading-relaxed">
+                <h3 class="font-serif text-3xl md:text-5xl mb-10 leading-relaxed">
                     품질에 대한 약속,<br>
                     우리는 만족도로 말합니다.
                 </h3>
-                <p class="text-gray-500 text-sm md:text-base mb-12 leading-relaxed">
+                <p class="text-gray-500 text-base md:text-xl mb-16 leading-relaxed">
                     단순히 시간만 채우는 교육은 지양합니다. 유의미한 변화를 느끼지 못하셨다면 스승님 운영진을 통해 책임감 있게 소통하겠습니다.
                 </p>
                 
-                <div class="grid grid-cols-2 gap-4 md:gap-12 pt-12 border-t border-gray-100">
-                    <div class="bg-white p-6 rounded-2xl">
-                        <p class="text-2xl md:text-4xl font-black font-mont text-green-700">98%</p>
-                        <p class="text-[10px] text-gray-400 mt-2 font-bold uppercase tracking-widest">Satisfaction</p>
+                <div class="grid grid-cols-2 gap-6 md:gap-16 pt-16 border-t border-gray-100">
+                    <div class="bg-white p-8 md:p-10 rounded-3xl">
+                        <p class="text-4xl md:text-6xl font-black font-mont text-green-700">98%</p>
+                        <p class="text-[12px] text-gray-400 mt-4 font-bold uppercase tracking-widest">Satisfaction</p>
                     </div>
-                    <div class="bg-white p-6 rounded-2xl">
-                        <p class="text-2xl md:text-4xl font-black font-mont text-green-700">-7 Strokes</p>
-                        <p class="text-[10px] text-gray-400 mt-2 font-bold uppercase tracking-widest">Improvement</p>
+                    <div class="bg-white p-8 md:p-10 rounded-3xl">
+                        <p class="text-4xl md:text-6xl font-black font-mont text-green-700">-7 Strokes</p>
+                        <p class="text-[12px] text-gray-400 mt-4 font-bold uppercase tracking-widest">Improvement</p>
                     </div>
                 </div>
             </div>
@@ -332,25 +283,25 @@
     </section>
 
     <!-- 7️⃣ Information Footer -->
-    <section class="py-20 bg-gray-900 text-white">
+    <section class="py-24 bg-gray-900 text-white">
         <div class="content-container">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 border-b border-white/10 pb-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 border-b border-white/10 pb-20">
                 <div>
-                    <h3 class="font-serif text-2xl mb-8">운영 및 장소 안내</h3>
-                    <div class="space-y-6">
+                    <h3 class="font-serif text-3xl mb-12">운영 및 장소 안내</h3>
+                    <div class="space-y-8">
                         <div>
-                            <p class="text-gray-500 text-[10px] font-bold uppercase tracking-widest mb-2">Location</p>
-                            <p class="text-lg">남양주 비전힐스CC 파3 코스</p>
+                            <p class="text-gray-500 text-[12px] font-bold uppercase tracking-widest mb-3">Location</p>
+                            <p class="text-xl md:text-2xl">남양주 비전힐스CC 파3 코스</p>
                         </div>
                         <div>
-                            <p class="text-gray-500 text-[10px] font-bold uppercase tracking-widest mb-2">Investment</p>
-                            <p class="text-lg">1인 기준 140,000원 <span class="text-xs text-gray-400 ml-2">(입장료 별도)</span></p>
+                            <p class="text-gray-500 text-[12px] font-bold uppercase tracking-widest mb-3">Investment</p>
+                            <p class="text-xl md:text-2xl">1인 기준 140,000원 <span class="text-sm text-gray-400 ml-3">(입장료 별도)</span></p>
                         </div>
                     </div>
                 </div>
                 <div class="flex flex-col justify-end">
-                    <p class="text-gray-500 text-[10px] font-bold uppercase tracking-widest mb-4">Lesson Policy</p>
-                    <ul class="text-sm text-gray-400 space-y-2">
+                    <p class="text-gray-500 text-[12px] font-bold uppercase tracking-widest mb-6">Lesson Policy</p>
+                    <ul class="text-base md:text-lg text-gray-400 space-y-3">
                         <li>• 소수 정예 (최대 2인) 밀착형 레슨</li>
                         <li>• 최소 3일 전 일정 조율 및 변경 가능</li>
                         <li>• 기상 악화 시 골프장 규정에 따른 일정 조정</li>
@@ -358,8 +309,8 @@
                 </div>
             </div>
 
-            <div class="mt-12 text-center">
-                <p class="text-[11px] text-gray-600 uppercase tracking-[0.4em] font-mont">
+            <div class="mt-16 text-center">
+                <p class="text-[12px] text-gray-600 uppercase tracking-[0.4em] font-mont">
                     © 2026 Seuseungnim. Master Class Editorial.
                 </p>
             </div>
